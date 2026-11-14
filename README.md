@@ -1,12 +1,12 @@
 # AnaSim: Analog-Datapath Neural Network Processor Simulation Framework
 
-AnaSim is a software-hardware simulation framework for exploring a RISC-V-based neural network processor with an analog datapath. It combines a custom in-memory-computing (IMC) device model for the [Spike RISC-V ISA simulator](https://github.com/riscv-software-src/riscv-isa-sim) with [Baremetal-NN](https://github.com/ucb-bar/Baremetal-NN), which converts PyTorch models into C code for bare-metal targets.
+AnaSim is a software-hardware simulation framework for exploring a RISC-V-based analog datapath digital control (ADDC) neural network processor. It combines a custom ADDC accelerator device model for the [Spike RISC-V ISA simulator](https://github.com/riscv-software-src/riscv-isa-sim) with [Baremetal-NN](https://github.com/ucb-bar/Baremetal-NN), which converts PyTorch models into C code for bare-metal targets.
 
 ## Project components
 
 | Component | Purpose |
 | --- | --- |
-| [`spike-devices/`](spike-devices/) | Spike device plugin, including the IMC hardware model in `src/imc_device.cc`. |
+| [`spike-devices/`](spike-devices/) | Spike device plugin, including the ADDC accelerator model in `src/imc_device.cc`. |
 | [`Baremetal-NN/`](Baremetal-NN/) | PyTorch-to-C conversion tools, generated-code examples, and neural-network kernels. |
 
 ## Simulation workflow
