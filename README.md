@@ -11,9 +11,10 @@ AnaSim is a software-hardware simulation framework for exploring a RISC-V-based 
 
 ## Simulation workflow
 
-1. Convert a supported PyTorch model to C and model data with Baremetal-NN.
-2. Compile the generated code and the required bare-metal support code for RISC-V.
-3. Build the Spike device plugin and run the RISC-V program in Spike with the `imc_device` and its device-tree description.
+1. Train and quantize your DNN model using PyTorch.
+2. Convert a supported PyTorch model to C and model data with Baremetal-NN.
+3. Compile the generated code and the required bare-metal support code for RISC-V.
+4. Build the Spike device plugin and run the RISC-V program in Spike with the `imc_device` and its device-tree description.
 
 This repository contains the framework components; model conversion, target compilation, and simulation setup may require project-specific configuration. See the component documentation for details.
 
