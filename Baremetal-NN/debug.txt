@@ -1,0 +1,150 @@
+core   0: 0x8000061e (0x0408a823) sw      zero, 80(a7)
+core   0: 0x80000622 (0x05088893) addi    a7, a7, 80
+core   0: 0x80000626 (0x00f32023) sw      a5, 0(t1)
+conv layer start
+AMEM reset finish, 4095 rows
+bias_row: first=54 10th=28 last=53
+amem row cycles first = 0 last = 8
+0 row 0 col pixel of W imc_array0: first=32 2nd=39 3rd=14 last=30
+0 row 0 col's next pixel of W imc_array1: first=41 2nd=51 3rd=58 last=25
+0 row 1 col's next pixel of W imc_array0: first=46 2nd=40 3rd=29 last=48
+0 row 2 col's next pixel of W imc_array1: first=21 2nd=21 3rd=9 last=48
+1 row 0 col's next pixel of W imc_array0: first=40 2nd=36 3rd=22 last=12
+1 row 1 col's next pixel of W imc_array1: first=26 2nd=32 3rd=51 last=52
+1 row 2 col's next pixel of W imc_array0: first=15 2nd=29 3rd=9 last=26
+2 row 0 col's next pixel of W imc_array1: first=54 2nd=33 3rd=27 last=43
+2 row 1 col's next pixel of W imc_array0: first=30 2nd=39 3rd=12 last=37
+Data loading cycle= 20889
+IMC cycle= 0
+ANU cycle= 0
+amem row cycles first = 0 ofm = 8192 ofm2 = 8440 last = 8440
+amem last channel 1st result= 616 2nd = -948 last-1 = -47 last = -96
+IMC device 1: external interrupt level set to 1
+(spike) 
+core   0: exception interrupt #11, epc 0x8000062a
+(spike) 
+core   0: >>>>  trap_entry
+core   0: 0x8000082c (0x00007139) c.addi16sp sp, -64
+(spike) 
+core   0: 0x8000082e (0x0000de06) c.swsp  ra, 60(sp)
+(spike) 
+core   0: 0x80000830 (0x0000dc16) c.swsp  t0, 56(sp)
+(spike) 
+core   0: 0x80000832 (0x0000da1a) c.swsp  t1, 52(sp)
+(spike) 
+core   0: 0x80000834 (0x0000d81e) c.swsp  t2, 48(sp)
+(spike) 
+core   0: 0x80000836 (0x0000d672) c.swsp  t3, 44(sp)
+(spike) 
+core   0: 0x80000838 (0x0000d476) c.swsp  t4, 40(sp)
+(spike) 
+core   0: 0x8000083a (0x0000d27a) c.swsp  t5, 36(sp)
+(spike) 
+core   0: 0x8000083c (0x0000d07e) c.swsp  t6, 32(sp)
+(spike) 
+core   0: 0x8000083e (0x0000ce2a) c.swsp  a0, 28(sp)
+(spike) 
+core   0: 0x80000840 (0x0000cc2e) c.swsp  a1, 24(sp)
+(spike) 
+core   0: 0x80000842 (0x0000ca32) c.swsp  a2, 20(sp)
+(spike) 
+core   0: 0x80000844 (0x0000c836) c.swsp  a3, 16(sp)
+(spike) 
+core   0: 0x80000846 (0x0000c63a) c.swsp  a4, 12(sp)
+(spike) 
+core   0: 0x80000848 (0x0000c43e) c.swsp  a5, 8(sp)
+(spike) 
+core   0: 0x8000084a (0x0000c242) c.swsp  a6, 4(sp)
+(spike) 
+core   0: 0x8000084c (0x0000c046) c.swsp  a7, 0(sp)
+(spike) 
+core   0: 0x8000084e (0x00000297) auipc   t0, 0x0
+(spike) 
+core   0: 0x80000852 (0xfcc28293) addi    t0, t0, -52
+(spike) 
+core   0: 0x80000856 (0x00009282) c.jalr  t0
+(spike) 
+core   0: 0x8000081a (0x0c2007b7) lui     a5, 0xc200
+(spike) 
+core   0: 0x8000081e (0x000043d4) c.lw    a3, 4(a5)
+(spike) 
+core   0: 0x80000820 (0x10000737) lui     a4, 0x10000
+(spike) 
+core   0: 0x80000824 (0x00072823) sw      zero, 16(a4)
+IMC device 1: external interrupt level set to 0
+IMC_IE = 0
+(spike) 
+core   0: 0x80000828 (0x0000c3d4) c.sw    a3, 4(a5)
+PLIC store addr 200004 len 4
+(spike) 
+core   0: 0x8000082a (0x00008082) ret
+(spike) 
+core   0: 0x80000858 (0x000050f2) c.lwsp  ra, 60(sp)
+(spike) 
+core   0: 0x8000085a (0x000052e2) c.lwsp  t0, 56(sp)
+(spike) 
+core   0: 0x8000085c (0x00005352) c.lwsp  t1, 52(sp)
+(spike) 
+core   0: 0x8000085e (0x000053c2) c.lwsp  t2, 48(sp)
+(spike) 
+core   0: 0x80000860 (0x00005e32) c.lwsp  t3, 44(sp)
+(spike) 
+core   0: 0x80000862 (0x00005ea2) c.lwsp  t4, 40(sp)
+(spike) 
+core   0: 0x80000864 (0x00005f12) c.lwsp  t5, 36(sp)
+(spike) 
+core   0: 0x80000866 (0x00005f82) c.lwsp  t6, 32(sp)
+(spike) 
+core   0: 0x80000868 (0x00004572) c.lwsp  a0, 28(sp)
+(spike) 
+core   0: 0x8000086a (0x000045e2) c.lwsp  a1, 24(sp)
+(spike) 
+core   0: 0x8000086c (0x00004652) c.lwsp  a2, 20(sp)
+(spike) 
+core   0: 0x8000086e (0x000046c2) c.lwsp  a3, 16(sp)
+(spike) 
+core   0: 0x80000870 (0x00004732) c.lwsp  a4, 12(sp)
+(spike) 
+core   0: 0x80000872 (0x000047a2) c.lwsp  a5, 8(sp)
+(spike) 
+core   0: 0x80000874 (0x00004812) c.lwsp  a6, 4(sp)
+(spike) 
+core   0: 0x80000876 (0x00004882) c.lwsp  a7, 0(sp)
+(spike) 
+core   0: 0x80000878 (0x341022f3) csrr    t0, mepc
+(spike) 
+core   0: 0x8000087c (0x00000291) c.addi  t0, 4
+(spike) 
+core   0: 0x8000087e (0x34129073) csrw    mepc, t0
+(spike) 
+core   0: 0x80000882 (0x00006121) c.addi16sp sp, 64
+(spike) 
+core   0: 0x80000884 (0x30200073) mret
+(spike) 
+core   0: 0x8000062e (0x04f70163) beq     a4, a5, pc + 66
+(spike) 
+core   0: 0x80000670 (0x000050b2) c.lwsp  ra, 44(sp)
+(spike) 
+core   0: 0x80000672 (0x00005492) c.lwsp  s1, 36(sp)
+(spike) 
+core   0: 0x80000674 (0x00004a62) c.lwsp  s4, 24(sp)
+(spike) 
+core   0: 0x80000676 (0x00004ad2) c.lwsp  s5, 20(sp)
+(spike) 
+core   0: 0x80000678 (0x00004b42) c.lwsp  s6, 16(sp)
+(spike) 
+core   0: 0x8000067a (0x00004bb2) c.lwsp  s7, 12(sp)
+(spike) 
+core   0: 0x8000067c (0x00006145) c.addi16sp sp, 48
+(spike) 
+core   0: 0x8000067e (0x00008082) ret
+(spike) 
+core   0: 0x80000814 (0x000040f2) c.lwsp  ra, 28(sp)
+(spike) 
+core   0: 0x80000816 (0x00006105) c.addi16sp sp, 32
+(spike) 
+core   0: 0x80000818 (0x00008082) ret
+(spike) 
+core   0: 0x8000013e (0xb00027f3) csrr    a5, mcycle
+(spike) 
+core   0: 0x80000142 (0x000044bc) c.lw    a5, 72(s1)
